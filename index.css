@@ -1,0 +1,190 @@
+* {
+    transition: all 0.25s;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(1deg, rgba(255,255,255,1) 5%, rgba(254,211,58,1) 51%);
+    /* background-image: url(https://i.ibb.co/n3Mg9JS/tumblr-af3b399df21dbbc7844e3d91cb2d56ab-8231efd9-1280.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .contenedor{
+    width: 100%;
+    height: 100px;
+    
+  }
+  img{
+   width: 900px;
+  }
+
+  .titulo{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 10px;
+    padding-top: 7px;
+  }
+  .p-titulo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  #encabezado {
+    width: 500px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  
+  .opcion {
+    text-align: center;
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    
+  }
+  
+  .opcion:hover{
+       background: lightgray;
+  }
+
+  #imagen{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+  }
+  
+/*:::::Pie de Pagina*/
+.pie-pagina{
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: aqua;
+}
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+@media screen and (max-width:800px){
+  .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width:390px) {
+  .contenedor img{
+   width: 100%;
+  }
+  body{
+    width: 100%;
+    
+  }
+  #tablero-de-juego{
+    width: 100%;
+  }
+  #encabezado{
+    width: 100%;
+  }
+  .titulo{
+    width: 100%;
+    margin-top: -30px;
+    
+  }
+  .p-titulo{
+    width: 100%;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .opcion{
+    width: 100%;
+    
+  }
+  #pregunta{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+   #imagen{
+    height: 200px;
+  }
+}
